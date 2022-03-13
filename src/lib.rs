@@ -9,7 +9,8 @@ mod tests {
 
     #[test]
     fn test_baekjun_basic() {
-        assert!(baekjun_basic::baekjun_2557_get_helloworld());
+        assert!(baekjun_basic::baekjun_2557());
+        assert!(baekjun_basic::baekjun_1330());
     }
 }
 
