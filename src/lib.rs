@@ -2,6 +2,7 @@ use std::io;
 
 mod baekjun_basic;
 mod baekjun_character;
+mod baekjun_math1;
 
 // do test :
 // cargo test -- --show-output
@@ -51,6 +52,13 @@ mod tests {
         assert_eq!(baekjun_character::baekjun_10809(String::from("aaabbb")), array);
         array[25] = 6;
         assert_eq!(baekjun_character::baekjun_10809(String::from("aaabbbz")), array);
+    }
+
+    #[test]
+    fn test_baekjun_1712() {
+        assert_eq!(baekjun_math1::baekjun_1712(String::from("1000 70 170")), 11);
+        assert_eq!(baekjun_math1::baekjun_1712(String::from("3 2 1")), -1);
+        assert_eq!(baekjun_math1::baekjun_1712(String::from("2100000000 9 10")), 2100000001);
     }
 }
 
