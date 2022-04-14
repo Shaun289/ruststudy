@@ -3,6 +3,7 @@ use std::io;
 mod baekjun_basic;
 mod baekjun_character;
 mod baekjun_math1;
+mod cote_array;
 
 // do test :
 // cargo test -- --show-output
@@ -59,6 +60,12 @@ mod tests {
         assert_eq!(baekjun_math1::baekjun_1712(String::from("1000 70 170")), 11);
         assert_eq!(baekjun_math1::baekjun_1712(String::from("3 2 1")), -1);
         assert_eq!(baekjun_math1::baekjun_1712(String::from("2100000000 9 10")), 2100000001);
+    }
+
+    #[test]
+    fn test_cote_array() {
+        let mut array : [i32] = [1, 3, 5, 7, 9, 11, 13, 15, 17 ,19];
+        assert_eq!(cote_array::cote_array_binary(array, 5), 2);
     }
 }
 
